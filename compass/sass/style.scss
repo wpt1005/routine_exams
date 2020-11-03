@@ -1,0 +1,73 @@
+@charset "utf-8";
+@import "compass/reset";
+@import "./partials/constants";
+@import "./partials/mixins";
+
+html {
+	font-size: $font-base-size;
+	background-color: #ffffff;
+	body {
+		background-color: $base-color;
+		width: multiplySize(28.0);
+		margin: multiplySize(1.00) auto;
+		padding: multiplySize(1.25);
+		color: $font-default-color;
+		font-size: $font-default-size;
+	}
+}
+
+h1, h2 {font-size: $page-title-size; font-weight: bold;}
+
+h1 {
+	@include set_margin_padding(0.25, 0.75);
+	border-left: 5px solid $page-title-bar-color;
+}
+
+h2 {
+  margin: multiplySize(0.75) 0;
+  padding: convertSize(0.75rem);
+	color: $title-font-color;
+}
+
+table.list {
+	td {
+		padding: multiplySize(0.4);
+		vertical-align: top;
+		line-height: 1.4;
+		&.photo img{width: multiplySize(7.5);}
+		&.info {width: multiplySize(24);}
+		&.link {width: multiplySize(2.75);}
+		&:not(.photo) {padding-top: multiplySize(1);}
+		dl {
+			dt {
+				margin-bottom: multiplySize(0.50);
+				font-weight: bold;
+			}
+		}
+	}
+}
+
+form {
+	input {
+		&[type="submit"], &[type="reset"] {
+			width: multiplySize(4);
+		}
+	}	
+}
+
+.clearfix {
+	*zoom: 1;
+	&::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+.copyright {
+	@include style_copyright(36rem, 3.3rem, 1.2rem);
+}
+
+.error {
+	color: tomato;
+}

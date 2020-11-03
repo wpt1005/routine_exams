@@ -1,0 +1,81 @@
+@charset "UTF-8";
+/**
+ * 著作権表示スタイル
+ * @param width 著作権表示タグの幅
+ * @param margin-top  上外余白幅（実寸）
+ * @param padding-top 上内余白幅（実寸）
+ */
+/**
+ * 余白幅一括設定
+ * @param margin-rate  外余白幅（デフォルト文字サイズに対する倍率）
+ * @param padding-rate 内余白幅（デフォルト文字サイズに対する倍率）
+ */
+/**
+ * 実寸をデフォルト文字サイズの相対実寸に変換する。
+ * @param seed   変換する対象実寸
+ */
+/**
+ * デフォルト文字サイズの指定倍数の実寸に変換する。
+ * @param seed   変換する対象実寸
+ */
+#detail h2:not(:first-child) {
+  margin-bottom: 0.35rem;
+}
+#detail section {
+  margin: 0rem;
+  padding: 0rem 1.75rem;
+}
+#detail table.list {
+  margin-bottom: 1.75rem;
+}
+#detail table.list td {
+  padding: 0.35rem;
+}
+#detail table.entry {
+  vertical-align: middle;
+  width: 35rem;
+  border: 1px solid #ffbc61;
+}
+#detail table.entry th, #detail table.entry td {
+  border: 1px solid #ffbc61;
+  padding: 0.63rem 1.05rem;
+}
+#detail table.entry th {
+  width: 5.46rem;
+  background-color: #ffc679;
+  font-size: 1.33rem;
+  font-weight: bold;
+}
+#detail table.entry td input[type="text"], #detail table.entry td textarea {
+  width: 24.15rem;
+}
+#detail table.entry td textarea {
+  height: 5.6rem;
+}
+#detail .reviews dl {
+  line-height: 1.4;
+  margin-bottom: 1.4rem;
+}
+#detail .reviews dl:last-child {
+  margin-bottom: 2.1rem;
+}
+#detail .reviews dl dt {
+  color: #f99292;
+  margin: 0.35rem 0;
+}
+#detail .reviews .posted {
+  text-align: right;
+}
+#detail .reviews .posted span.reviewer {
+  margin-left: 0.175rem;
+}
+#detail .reviews .posted span.date {
+  margin-right: 0.175rem;
+}
+#detail .entry .buttons {
+  margin: 1.75rem 0;
+  text-align: center;
+}
+#detail .entry .buttons input {
+  margin: 0 0.49rem;
+}

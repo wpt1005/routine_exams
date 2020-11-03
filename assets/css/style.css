@@ -1,0 +1,154 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/**
+ * 著作権表示スタイル
+ * @param width 著作権表示タグの幅
+ * @param margin-top  上外余白幅（実寸）
+ * @param padding-top 上内余白幅（実寸）
+ */
+/**
+ * 余白幅一括設定
+ * @param margin-rate  外余白幅（デフォルト文字サイズに対する倍率）
+ * @param padding-rate 内余白幅（デフォルト文字サイズに対する倍率）
+ */
+/**
+ * 実寸をデフォルト文字サイズの相対実寸に変換する。
+ * @param seed   変換する対象実寸
+ */
+/**
+ * デフォルト文字サイズの指定倍数の実寸に変換する。
+ * @param seed   変換する対象実寸
+ */
+html {
+  font-size: 62.5%;
+  background-color: #ffffff;
+}
+html body {
+  background-color: #fff4e0;
+  width: 39.2rem;
+  margin: 1.4rem auto;
+  padding: 1.75rem;
+  color: dimgray;
+  font-size: 1.4rem;
+}
+
+h1, h2 {
+  font-size: 1.68rem;
+  font-weight: bold;
+}
+
+h1 {
+  margin: 0.35rem;
+  padding: 1.05rem;
+  border-left: 5px solid #f99292;
+}
+
+h2 {
+  margin: 1.05rem 0;
+  padding: 0.75rem;
+  color: #622d18;
+}
+
+table.list td {
+  padding: 0.56rem;
+  vertical-align: top;
+  line-height: 1.4;
+}
+table.list td.photo img {
+  width: 10.5rem;
+}
+table.list td.info {
+  width: 33.6rem;
+}
+table.list td.link {
+  width: 3.85rem;
+}
+table.list td:not(.photo) {
+  padding-top: 1.4rem;
+}
+table.list td dl dt {
+  margin-bottom: 0.7rem;
+  font-weight: bold;
+}
+
+form input[type="submit"], form input[type="reset"] {
+  width: 5.6rem;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.copyright {
+  width: 36rem;
+  margin: 0 auto;
+  margin-top: 3.3rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid dimgray;
+  font-size: 1.26rem;
+  text-align: center;
+}
+
+.error {
+  color: tomato;
+}

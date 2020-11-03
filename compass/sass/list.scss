@@ -1,0 +1,19 @@
+@charset "utf-8";
+@import "./partials/constants";
+@import "./partials/mixins";
+
+#list {
+	h2 {
+		float:left;
+		margin-right: multiplySize(1);
+	}
+
+	p {
+		margin: multiplySize(1.25);
+	}
+
+	.entry {
+		padding-top: multiplySize(0.80);
+	}
+
+}

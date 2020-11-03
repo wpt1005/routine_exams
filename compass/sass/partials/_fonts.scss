@@ -1,0 +1,33 @@
+@charset "utf-8";
+//@import "./original_theme";
+
+// 基本フォントスタイル
+$font-default-color: dimgray;
+$font-base-size: 62.5%;
+$font-default-size: 1.4rem;
+
+// 基本フォントサイズ倍率
+$h1-rate: 1.20;
+$h2-rate: 1.20;
+$h3-rate: 1.20;
+$copyright-rate: 0.90;
+
+// ページタイトルのスタイル
+$page-title-bar-color: $accent-color; // タイトルバー
+$page-title-size: $font-default-size * $h1-rate;
+
+// 章見出しのスタイル
+$title-font-color: $sub-accent-color;
+$title-font-size: $font-default-size * $h2-rate;
+
+// 著作権表示サイズ
+$copyright-size: $font-default-size * $copyright-rate;
+
+// 評価ポイントのフォントカラー
+$points-color: $accent-color;
+
+// 表罫線色
+$border-color: $sub-main-color;
+
+// 表見出し背景色
+$th-bgcolor: $main-color;

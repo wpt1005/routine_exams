@@ -1,0 +1,44 @@
+@charset "utf-8";
+@import "./constants";
+
+/**
+ * 著作権表示スタイル
+ * @param width 著作権表示タグの幅
+ * @param margin-top  上外余白幅（実寸）
+ * @param padding-top 上内余白幅（実寸）
+ */
+@mixin style_copyright($width, $margin-top, $padding-top) {
+  width: convertSize($width);
+  margin: 0 auto;
+  margin-top: convertSize($margin-top);
+  padding-top: convertSize($padding-top);
+  border-top: 1px solid $font-default-color;
+  font-size: $copyright-size;
+  text-align: center;
+}
+
+/**
+ * 余白幅一括設定
+ * @param margin-rate  外余白幅（デフォルト文字サイズに対する倍率）
+ * @param padding-rate 内余白幅（デフォルト文字サイズに対する倍率）
+ */
+ @mixin set_margin_padding($margin-rate, $padding-rate) {
+	margin: multiplySize($margin-rate);
+	padding: multiplySize($padding-rate);
+}
+
+/**
+ * 実寸をデフォルト文字サイズの相対実寸に変換する。
+ * @param seed   変換する対象実寸
+ */
+ @function convertSize($seed) {
+	@return $font-default-size * ($seed / $font-default-size);
+}
+
+/**
+ * デフォルト文字サイズの指定倍数の実寸に変換する。
+ * @param seed   変換する対象実寸
+ */
+ @function multiplySize($seed) {
+	@return $font-default-size * $seed;
+}

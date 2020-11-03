@@ -10,4 +10,6 @@
 
 小テストをすべて完了すると、かんたんなレストランレビュサイトが完成します。
 
-	1. [第一回小テスト課題](https://github.com/wpt1005/routine_exams/blob/master/task-1.md)
+[第一回小テスト課題](https://github.com/wpt1005/routine_exams/blob/master/task-1.md)
+
+[第二回小テスト課題](https://github.com/wpt1005/routine_exams/blob/master/task-2.md)
